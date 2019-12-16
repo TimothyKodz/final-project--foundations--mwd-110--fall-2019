@@ -1,4 +1,69 @@
+@import "variables";
+
 html {
   background-color: #000;
   color: #fff;
+}
+
+@media (max-width: $width-laptop) {
+  #art {
+    img {
+      display: block;
+    }
+
+    div:nth-child(3n+1) {
+      img {
+      }
+    }
+    div:nth-child(3n+2) {
+      img {
+      }
+    }
+    div:nth-child(3n) {
+      img {
+      }
+    }
+  }
+}
+
+@media (max-width: $width-tablet) {
+  #art {
+    img {
+      display: block;
+    }
+
+    div:nth-child(3n+1) {
+      img {
+      }
+    }
+    div:nth-child(3n+2) {
+      img {
+      }
+    }
+    div:nth-child(3n) {
+      img {
+      }
+    }
+  }
+}
+
+@media (max-width: $width-mobile) {
+  #art {
+    img {
+      display: block;
+    }
+
+    div:nth-child(3n+1) {
+      img {
+      }
+    }
+    div:nth-child(3n+2) {
+      img {
+      }
+    }
+    div:nth-child(3n) {
+      img {
+      }
+    }
+  }
 }
