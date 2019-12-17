@@ -6,10 +6,30 @@ html {
   background-color: $color-primary;
 }
 
+#art {
+  display: flex;
+  img {
+    width: 300px;
+  }
+
+  div:nth-child(3n+1) {
+    img {
+    }
+  }
+  div:nth-child(3n+2) {
+    img {
+    }
+  }
+  div:nth-child(3n) {
+    img {
+    }
+  }
+}
+
+
 @media (max-width: $width-laptop) {
   #art {
     img {
-      display: block;
     }
 
     div:nth-child(3n+1) {
@@ -30,7 +50,6 @@ html {
 @media (max-width: $width-tablet) {
   #art {
     img {
-      display: block;
     }
 
     div:nth-child(3n+1) {
@@ -51,7 +70,6 @@ html {
 @media (max-width: $width-mobile) {
   #art {
     img {
-      display: block;
     }
 
     div:nth-child(3n+1) {

@@ -1,7 +1,13 @@
 h1 {
-  font: 80px $font-stack--heading;
+  font: 100px $font-stack--heading;
 }
 
 p {
   font: 30px $font-stack--reading;
+}
+
+#art {
+  p {
+    font-size: 20px;
+  }
 }
