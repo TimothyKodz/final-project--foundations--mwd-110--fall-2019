@@ -1,8 +1,9 @@
-@import "variables";
+@import 'variables';
+@import 'color-classes';
+@import 'text';
 
 html {
-  background-color: #000;
-  color: #fff;
+  background-color: $color-primary;
 }
 
 @media (max-width: $width-laptop) {
