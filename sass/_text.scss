@@ -1,9 +1,15 @@
 h1 {
   font: 100px $font-stack--heading;
+  margin-left: 80px;
 }
 
-p {
-  font: 30px $font-stack--reading;
+#about {
+  margin-left: 50px;
+
+  p {
+    font: 25px $font-stack--reading;
+    width: 80%;
+  }
 }
 
 #art {
