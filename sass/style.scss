@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'color-classes';
 @import 'text';
+@import 'social';
 
 html {
   background-color: $color-primary;
@@ -8,6 +9,8 @@ html {
 
 #art {
   display: flex;
+  flex-wrap: wrap;
+
   img {
     width: 300px;
   }
