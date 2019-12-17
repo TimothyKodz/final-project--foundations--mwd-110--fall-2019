@@ -45,65 +45,40 @@ body {
 }
 
 
-@media (max-width: $width-tablet) {
+@media (max-width: $width-two-wide) {
   body {
-    margin: 15px;
-    width: $body-width-tablet;
-    background-color: $color-dark-blue;
-    border-radius: 20px;
-  }
-
-  #art {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-
-    div {
-      height: 470px;
-      margin: 10px;
-
-      img {
-        width: $img-width;
-      }
-      p {
-        width: $img-width;
-      }
-    }
-  }
-}
-
-@media (max-width: $width-mobile) {
-  body {
-    margin: 15px;
-    width: $body-width-mobile;
-    background-color: $color-primary;
-    border-radius: 20px;
-  }
-
-  #art {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-
-    div {
-      height: 470px;
-      margin: 10px;
-
-      img {
-        width: $img-width;
-      }
-      p {
-        width: $img-width;
-      }
-    }
+    width: $body-two-wide;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 120px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #about {
+    margin: 0 5px;
+
+    p {
+      width: 100%;
+      font-size: 25px;
+    }
+  }
+
+  h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $width-one-wide) {
+  body {
+    width: $body-one-wide;
+  }
+
+  h1 {
+    font-size: 65px;
     margin: 0 auto;
     text-align: center;
   }
@@ -135,4 +110,78 @@ body {
     }
   }
 
+  h2 {
+    font-size: 55px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #art {
+    div {
+      height: auto;
+      margin: 30px auto;
+    }
+  }
+}
+
+@media (max-width: $width-min) {
+  body {
+    width: $body-width-min;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #about {
+    margin: auto;
+
+    p {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+
+  #social-buttons {
+    flex-direction: column;
+    margin: 5px auto;
+    width: 150px;
+
+    li {
+      margin: 5px auto;
+    }
+
+    a {
+      width: 150px;
+      height: 25px;
+      font-family: $font-stack--reading;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #art {
+
+    div {
+      height: auto;
+      margin: 30px 0;
+
+      img {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
 }

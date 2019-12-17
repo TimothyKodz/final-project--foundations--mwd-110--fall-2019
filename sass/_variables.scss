@@ -11,8 +11,9 @@ $color-pixiv: #0096fa;
 $color-instagram: #d7296e;
 
 //media widths
-$width-tablet: 1007px;
-$width-mobile: 687px;
+$width-two-wide: 1007px;
+$width-one-wide: 687px;
+$width-min: 320px;
 
 //fonts
 $font-stack--heading: 'Yellowtail', cursive;
@@ -21,5 +22,6 @@ $font-stack--reading: 'Quicksand', serif;
 //dimensions
 $img-width: 300px;
 $body-width-full: 1080px;
-$body-width-tablet: 800px;
-$body-width-mobile: 460px;
+$body-two-wide: 800px;
+$body-one-wide: 460px;
+$body-width-min: 100%;
