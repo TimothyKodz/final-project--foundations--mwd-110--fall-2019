@@ -18,9 +18,8 @@ html {
 }
 
 body {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 1080px;
+  margin: 15px;
+  width: $body-width-full;
   background-color: $color-primary;
   border-radius: 20px;
 }
@@ -30,79 +29,110 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 45px;
   margin-bottom: 15px;
 
   div {
     height: 470px;
-    margin-top: 10px;
+    margin: 10px;
 
     img {
-      width: 300px;
+      width: $img-width;
     }
     p {
-      width: 300px;
+      width: $img-width;
     }
   }
 }
 
-
-@media (max-width: $width-laptop) {
-  #art {
-    img {
-    }
-
-    div:nth-child(3n+1) {
-      img {
-      }
-    }
-    div:nth-child(3n+2) {
-      img {
-      }
-    }
-    div:nth-child(3n) {
-      img {
-      }
-    }
-  }
-}
 
 @media (max-width: $width-tablet) {
-  #art {
-    img {
-    }
+  body {
+    margin: 15px;
+    width: $body-width-tablet;
+    background-color: $color-dark-blue;
+    border-radius: 20px;
+  }
 
-    div:nth-child(3n+1) {
+  #art {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+
+    div {
+      height: 470px;
+      margin: 10px;
+
       img {
+        width: $img-width;
       }
-    }
-    div:nth-child(3n+2) {
-      img {
-      }
-    }
-    div:nth-child(3n) {
-      img {
+      p {
+        width: $img-width;
       }
     }
   }
 }
 
 @media (max-width: $width-mobile) {
-  #art {
-    img {
-    }
+  body {
+    margin: 15px;
+    width: $body-width-mobile;
+    background-color: $color-primary;
+    border-radius: 20px;
+  }
 
-    div:nth-child(3n+1) {
+  #art {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+
+    div {
+      height: 470px;
+      margin: 10px;
+
       img {
+        width: $img-width;
       }
-    }
-    div:nth-child(3n+2) {
-      img {
-      }
-    }
-    div:nth-child(3n) {
-      img {
+      p {
+        width: $img-width;
       }
     }
   }
+
+  h1 {
+    font-size: 60px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #about {
+    margin: 0 5px;
+
+    p {
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+
+  #social-buttons {
+    flex-direction: column;
+    margin: 5px auto;
+    width: 150px;
+
+    li {
+      margin: 5px auto;
+    }
+
+    a {
+      width: 150px;
+      height: 25px;
+      font-family: $font-stack--reading;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
 }

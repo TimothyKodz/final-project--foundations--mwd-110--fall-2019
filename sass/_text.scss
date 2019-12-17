@@ -12,6 +12,11 @@ h1 {
   }
 }
 
+h2 {
+  font: 100px $font-stack--heading;
+  margin-left: 80px;
+}
+
 #art {
   p {
     font-size: 20px;
