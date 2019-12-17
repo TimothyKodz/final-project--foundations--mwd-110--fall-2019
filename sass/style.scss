@@ -3,6 +3,13 @@
 @import 'text';
 @import 'social';
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 html {
   background-color: #ccc;
   display: flex;
@@ -15,6 +22,7 @@ body {
   margin-bottom: 30px;
   width: 1080px;
   background-color: $color-primary;
+  border-radius: 20px;
 }
 
 #art {
